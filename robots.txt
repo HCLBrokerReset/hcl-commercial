@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hclcommercial.co.uk/sitemap.xml
+Sitemap: https://www.hclcommercial.co.uk/sitemap.xml
