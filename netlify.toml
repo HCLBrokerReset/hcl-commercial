@@ -1,0 +1,12 @@
+# HCL Commercial — Netlify build settings.
+# Only the files listed below are published. Everything else in this repository
+# (including the preserved care-home page in /care-homes/, its form script, styles.css,
+# privacy-policy.html draft, README.md and VERIFICATION.md) stays in GitHub but is
+# NEVER deployed. To publish a new page, add it to this list deliberately.
+[build]
+  publish = "dist"
+  command = """
+    rm -rf dist && mkdir -p dist/assets && \
+    cp index.html privacy.html robots.txt sitemap.xml dist/ && \
+    cp assets/home.css assets/home.js assets/heron.svg assets/barry-herron.webp assets/barry-herron.jpg dist/assets/
+  """

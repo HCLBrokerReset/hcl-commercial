@@ -57,7 +57,7 @@ img { max-width: 100%; }
 .section-intro { font-size: 19px; color: var(--muted); }
 
 /* Header */
-.site-header { position: sticky; top: 0; z-index: 30; background: rgba(255, 255, 255, .97); border-bottom: 1px solid var(--line); }
+.site-header { position: sticky; top: 0; z-index: 30; background: #fff; border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: var(--header-h); }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand span { font-family: var(--serif); color: var(--navy); font-size: 22px; letter-spacing: .05em; line-height: 1.15; }
@@ -208,10 +208,7 @@ img { max-width: 100%; }
   .site-header, .menu-toggle, .hero-actions { display: none !important; }
   .approach, .hero-panel, .sector-card, .site-footer { background: none !important; color: #000 !important; }
 }
-/* Draft-only markers on the privacy page — remove with the draft box before launch */
-.draft-box { background: #fff3df; border: 1px solid var(--gold); border-left-width: 4px; padding: 18px 22px; margin-bottom: 40px; font-size: 16px; }
-.draft-box ol { margin: 8px 0 0; padding-left: 1.3em; }
-.draft-box p { margin: 0; }
+/* Pre-launch marker on the privacy page (publication date) — remove at go-live */
 mark.todo { background: #fff3df; color: #5a3d0c; border: 1px dashed var(--gold); padding: 1px 6px; font-weight: 600; }
 /* Enquiry call to action */
 .hero-note { margin: 22px 0 0; font-size: 15px; color: var(--muted); max-width: 520px; }
