@@ -208,3 +208,16 @@ img { max-width: 100%; }
   .site-header, .menu-toggle, .hero-actions { display: none !important; }
   .approach, .hero-panel, .sector-card, .site-footer { background: none !important; color: #000 !important; }
 }
+/* Draft-only markers on the privacy page — remove with the draft box before launch */
+.draft-box { background: #fff3df; border: 1px solid var(--gold); border-left-width: 4px; padding: 18px 22px; margin-bottom: 40px; font-size: 16px; }
+.draft-box ol { margin: 8px 0 0; padding-left: 1.3em; }
+.draft-box p { margin: 0; }
+mark.todo { background: #fff3df; color: #5a3d0c; border: 1px dashed var(--gold); padding: 1px 6px; font-weight: 600; }
+/* Enquiry call to action */
+.hero-note { margin: 22px 0 0; font-size: 15px; color: var(--muted); max-width: 520px; }
+.cta-steps { list-style: none; counter-reset: cta; margin: 26px 0 0; padding: 0; }
+.cta-steps li { counter-increment: cta; position: relative; padding: 12px 0 12px 48px; border-top: 1px solid var(--line); }
+.cta-steps li::before { content: counter(cta); position: absolute; left: 0; top: 11px; width: 32px; height: 32px; border-radius: 50%; background: var(--navy); color: #fff; font: 15px/32px var(--serif); text-align: center; }
+.cta-steps strong { color: var(--navy); }
+.contact-card-title { font-family: var(--serif); font-size: 24px; line-height: 1.25; color: var(--navy); text-align: center; margin-bottom: 20px; }
+@media (max-width: 600px) { .hero-note { text-align: left; } }
