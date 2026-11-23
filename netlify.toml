@@ -6,7 +6,8 @@
 [build]
   publish = "dist"
   command = """
-    rm -rf dist && mkdir -p dist/assets && \
+    rm -rf dist && mkdir -p dist/assets dist/wholesalers && \
     cp index.html privacy.html robots.txt sitemap.xml dist/ && \
-    cp assets/home.css assets/home.js assets/heron.svg assets/barry-herron.webp assets/barry-herron.jpg dist/assets/
+    cp wholesalers/index.html dist/wholesalers/ && \
+    cp assets/home.css assets/home.js assets/heron.svg assets/barry-herron.webp assets/barry-herron.jpg assets/wholesalers.css dist/assets/
   """
