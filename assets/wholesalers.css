@@ -1,0 +1,67 @@
+/* HCL Commercial — /wholesalers/ page additions. Builds on home.css; does not change it. */
+
+/* Five problem cards: 3 + 2 on desktop */
+.problem-grid-wide { grid-template-columns: repeat(6, 1fr); }
+.problem-grid-wide li { grid-column: span 2; }
+.problem-grid-wide li:nth-child(4) { grid-column: 2 / span 2; }
+.problem-grid-wide li:nth-child(5) { grid-column: 4 / span 2; }
+
+/* Five-step process on the navy band */
+.process { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid rgba(255, 255, 255, .16); }
+.process li { padding: 30px 22px 8px 0; }
+.process li + li { padding-left: 22px; border-left: 1px solid rgba(255, 255, 255, .16); }
+.process h3 { color: #fff; font-size: 20px; }
+.process p { font-size: 15.5px; }
+
+/* What it is / isn't */
+.is-isnt { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; }
+.is-card, .isnt-card { border-radius: 6px; padding: clamp(28px, 4vw, 40px); }
+.is-card { background: var(--ivory); border-top: 3px solid var(--gold); }
+.isnt-card { background: #fff; border: 1px solid var(--line); }
+.crosses { list-style: none; margin: 0; padding: 0; }
+.crosses li { position: relative; padding: 10px 0 10px 34px; border-bottom: 1px solid var(--line); color: var(--muted); }
+.crosses li::before, .crosses li::after { content: ""; position: absolute; left: 6px; top: 22px; width: 14px; height: 2px; background: #a0532f; }
+.crosses li::before { transform: rotate(45deg); }
+.crosses li::after { transform: rotate(-45deg); }
+.compliance-note { margin: 26px 0 0; font-size: 15px; color: var(--muted); border-left: 3px solid var(--gold); padding-left: 16px; max-width: 760px; }
+
+/* Getting started list inside the navy card */
+.start-steps { margin: 0 0 24px; padding-left: 1.2em; }
+.start-steps li { margin-bottom: 12px; }
+.start-steps strong { color: #fff; }
+
+/* FAQ */
+.faq-wrap { max-width: 900px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; list-style: none; position: relative; padding: 22px 44px 22px 0; font-family: var(--serif); font-size: 21px; color: var(--navy); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 6px; top: 16px; font: 28px/1 var(--sans); color: var(--gold-dark); }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: 0 0 22px; color: var(--muted); max-width: 720px; }
+
+@media (max-width: 1020px) {
+  .process { grid-template-columns: repeat(2, 1fr); }
+  .process li, .process li + li { padding: 26px 22px 6px 0; border-left: 0; }
+  .process li:nth-child(even) { padding-left: 22px; border-left: 1px solid rgba(255, 255, 255, .16); }
+  .process li:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .16); }
+}
+
+@media (max-width: 880px) {
+  .problem-grid-wide { grid-template-columns: 1fr; }
+  .problem-grid-wide li, .problem-grid-wide li:nth-child(4), .problem-grid-wide li:nth-child(5) { grid-column: auto; }
+  .is-isnt { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .process { grid-template-columns: 1fr; }
+  .process li, .process li + li, .process li:nth-child(even) { padding: 24px 0 4px; border-left: 0; }
+  .process li + li { border-top: 1px solid rgba(255, 255, 255, .16); }
+  .faq summary { font-size: 19px; }
+}
+
+/* Comfortable tap target for the standalone link in the navy card */
+.sector-card > .text-link { display: inline-block; padding: 10px 0; }
+
+/* Longer headline than the homepage: slightly smaller so it sits in fewer lines */
+.hero h1 { font-size: clamp(38px, 4.4vw, 56px); }
