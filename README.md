@@ -42,3 +42,9 @@ Preview banner moved to footer disclosures. Formspree was connected on 2 October
 
 ## Privacy notice
 The expanded enquiry notice is in the accessible privacy section/dialog and privacy-policy.html. It includes the owner-approved 12-month unsuccessful-enquiry retention rule. PRIVACY_LAUNCH_REVIEW.md records the proposed legitimate interests assessment, operational deletion actions and outstanding UK provider/transfer evidence. This is an enquiry notice, not a privacy notice for cold-email prospecting or fixed-fee governance.
+
+## New corporate homepage (branch claude/hcl-commercial-homepage, awaiting approval)
+- `index.html` is the new HCL Commercial corporate homepage, styled by `assets/home.css` and `assets/home.js` (menu and year only).
+- The previous care-home insurance introduction page is preserved unchanged at `care-homes/index.html`; it still uses `styles.css`, `script.js`, its Formspree form and `privacy-policy.html`. Its draft legal and privacy wording must be reviewed before that page is published or linked.
+- `privacy.html` is the privacy notice for the new homepage (website and direct email/telephone enquiries; no form, cookies or tracking). Bracketed items must be confirmed before launch.
+- `assets/barry-herron.webp/.jpg` is the approved director photograph, shared with the Herron Consultants Limited site.
